@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Visibility & z-index
+  </title>
+  <style>
+    .box {
+      height: 120px;
+      width: 120px;
+      border: 2px solid black;
+    }
+
+    #box1 {
+      background-color: burlywood;
+      position: relative;
+      top: 39px;
+
+      /*   z-index will only work on position: relative, absolute, fixed or sticky */
+
+      z-index: 1;
+    }
+
+    #box2 {
+      background-color: greenyellow;
+      position: relative;
+      top: 5px;
+      z-index: -1;
+
+      /*   display: none will hide the elements and the space 
+      display: none; */
+
+      /*   visibility: hidden hides the elements but shows its empty space 
+      visibility: hidden; */
+    }
+
+    #box3 {
+      background-color: cyan;
+    }
+
+    #box4 {
+      background-color: orangered;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- $ is a sequence of 
+ 1,2,3,4,... -->
+  <div class="box" id="box1">
+  </div>
+  <div class="box" id="box2">
+  </div>
+  <div class="box" id="box3">
+  </div>
+  <div class="box" id="box4">
+  </div>
+</body>
+
+</html>
