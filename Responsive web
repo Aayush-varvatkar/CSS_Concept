@@ -1,0 +1,25 @@
+Various Ways To Achieve Responsive Design :
+
+• By using rem/vh/vw units over pixels.
+
+• By using max-width/max-height.
+
+• Using CSS Media Queries.
+
+• Setting up the viewport.
+________________________________
+
+em- 
+
+• Font-sizes are inherited relative to the parent element.
+
+• 10em means ten times of the parent element.
+________________________________
+
+rem-
+
+• Font-size gets set according to the font-size of the root element.
+
+• In general, <html> is the root element.
+
+• In rem, "r" stands for "root."
