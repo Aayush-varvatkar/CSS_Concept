@@ -14,7 +14,7 @@ em-
 • Font-sizes are inherited relative to the parent element.
 
 • 10em means ten times of the parent element.
-________________________________
+-------------------------------
 
 rem-
 
@@ -23,3 +23,8 @@ rem-
 • In general, <html> is the root element.
 
 • In rem, "r" stands for "root."
+_______________________________
+
+Media query -
+
+• Media queries are used when we want to customize our website's presentation according to the user's screen size. With the help of media queries, you can display different markups based upon the device's general type(mobile, desktop, tablet).

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Advance css selectors
+  </title>
+  <style>
+    h2 {
+      text-align: center;
+      background-color: darkblue;
+      color: white;
+      font-weight: bold;
+      font-family: fantasy;
+    }
+
+    /* div p{
+      background-color: burlywood;
+      color: blueviolet;
+      font-size: 18px;
+      font-style: italic; 
+    } */
+
+
+    /* if p is right inside div then this CSS will be applied */
+    
+    /* div>p{
+      background-color: lime;
+      color: honeydew;
+    } */
+
+
+    /* if p is right after div i.e p is the next sibling of div*/
+    
+    /* div+p{
+      color: sandybrown;
+      background-color: navy;
+    } */
+  </style>
+</head>
+
+<body>
+  <h2> This is heading</h2>
+  <div class="comtainer">
+    <div>
+      <ul>
+        <li>
+          <p> This is paragraph inside li</p>
+        </li>
+      </ul>
+      <p> This is second paragraph inside div
+      </p>
+    </div>
+    <p> This is third paragraph under div</p>
+  </div>
+  <p>
+    This is most outer paragraph or fourth paragraph
+  </p>
+</body>
+
+</html>
