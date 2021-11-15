@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>box shadow and text shadow</title>
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .card {
+      padding: 20px 12px;
+      margin: 20px 12px;
+      background-color: #69CBFF;
+/*----------------------------*/
+      /* box-shadow: offset-x offset-y color; */
+      /* box-shadow: offset-x offset-y blur-radius color; */
+      /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+/*----------------------------*/
+
+      /* box-shadow: 10px 13px #275B76; 
+     box-shadow: -10px -13px #275B76; */
+
+      /* box-shadow: 10px 13px 18px #275B76; */
+
+      /* box-shadow: 10px 13px 18px 15px #275B76;*/
+
+      /* box-shadow: 10px 13px 18px 6px rgba(83, 192, 162, 0.5); */
+
+/*----------------------------*/
+
+      /* box-shadow: inset -4px -9px #275B76; */
+
+      /* box-shadow: 3px 5px green, 4px 6px red; */
+    }
+    .card h2{
+     /* text-shadow: 2px 1px whitesmoke;*/
+     /* text-shadow: 2px 1px 2px whitesmoke; */
+     
+     text-shadow: -3px -2px 2px white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" id="card1">
+      <h2>
+        This is first heading
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis blanditiis, vel. Veniam molestiae sequi consequatur eos obcaecati facilis quas sapiente nostrum magni? Ipsam praesentium impedit obcaecati, tempore aperiam dolor vitae iste excepturi debitis, neque.
+      </p>
+    </div>
+    <div class="card" id="card2">
+      <h2> This is second heading</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio aliquam ea sit, in provident consequuntur cum tempora iure itaque consequatur aut assumenda, voluptatum ullam adipisci atque excepturi fuga cumque deserunt deleniti enim non laborum.
+      </p>
+    </div>
+    <div class="card" id="card3">
+      <h2>
+        This is third heading
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quae, at tempora. Numquam iure culpa consequatur, dolore ab, et deleniti, laborum aliquam consequuntur, cupiditate adipisci laboriosam quo ducimus dignissimos quos commodi nemo impedit. Excepturi.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
