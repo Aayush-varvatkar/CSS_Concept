@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Animation and keyframes
+  </title>
+  <style>
+    .container {
+      background-color: greenyellow;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: seagreen;
+      position: relative;
+
+      animation-name: kirito;
+
+      /*  animation-name: kazuto;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+      animation-iteration-count: 2;
+      animation-fill-mode: backwards; */
+      /*  animation-direction: reverse; */
+
+
+      /* This properties can be set using shorthand;*/
+
+      /*  animation: animation-name,
+        animation-duration,
+        animation-timing-function,
+        animation-delay,
+        animation-iteration-count,
+        animation-fill-mode:*/
+
+       animation: kirito 4s ease-in-out 1s 2 backwards; 
+    }
+
+    @keyframes kazuto {
+      from {
+        width: 200px;
+      }
+
+      to {
+        width: 900px;
+      }
+    }
+    
+    @keyframes kirito {
+      0%{
+        top: 0px;
+        left: 0px;
+      }
+      25%{
+        top: 250px;
+        left: 0px;
+      }
+      50%{
+        top: 250px;
+        left: 250px;
+      }
+      75%{
+        top: 0px;
+        left: 250px;
+      }
+      100%{
+        top: 0px;
+        left: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      This is box
+    </div>
+  </div>
+</body>
+
+</html>
