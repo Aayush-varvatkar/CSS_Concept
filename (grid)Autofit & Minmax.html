@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Autofit and Minmax in CSS grid
+  </title>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 1rem;
+
+      /*grid-template-columns: 112px 112px 112px;
+    justify-content: center;*/
+
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+
+    .box {
+      background-color: #060C53;
+      border: 2px solid #792640;
+      padding: 30px;
+      color: #AEDECE;
+
+      box-shadow: 7px 9px 5px #361E53;
+
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box">This is box1</div>
+    <div class="box">This is box2</div>
+    <div class="box">This is box3</div>
+    <div class="box">This is box4</div>
+    <div class="box">This is box5</div>
+    <div class="box">This is box6</div>
+    <div class="box">This is box7</div>
+    <div class="box">This is box8</div>
+    <div class="box">This is box9</div>
+    <div class="box" id="ten">This is box10</div>
+  </div>
+
+</body>
+
+</html>
