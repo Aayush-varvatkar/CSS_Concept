@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Template area in css grid
+  </title>
+  <style>
+    
+    .container{
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-areas: 
+      'navbar navbar navbar navbar'
+      'section section section aside'
+      'footer footer footer footer';
+    }
+    
+    .primary{
+      background-color: #C0FF00;
+      border: 2px solid #1D00FF;
+      padding: 12px 18px;
+      color: #49116B;
+    }
+    
+    #navbar{
+      grid-area: navbar;
+    }
+    #section{
+      grid-area: section;
+    }
+    #aside{
+      grid-area: aside;
+    }
+    footer{
+      grid-area: footer
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="navbar" class="primary">
+
+      Home About Contact Us
+    </div>
+    <div id="section" class="primary">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi consequuntur quos accusamus iste omnis aut illo expedita facere veniam, sapiente ullam possimus suscipit.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, rerum assumenda facere et voluptas praesentium dolores sequi dolorem dolorum labore vel asperiores, odit, saepe soluta quibusdam beatae quasi dignissimos minima! Obcaecati facere ducimus, beatae illo laboriosam officiis esse a rerum quibusdam. Autem laboriosam, veniam vel, voluptates, dolor voluptatem voluptatum fugiat unde tenetur quia ad dolorum tempore quas corporis! Ut distinctio inventore dolorum quis odio totam aliquam exercitationem! Debitis animi ipsum unde obcaecati sed, fugiat autem iste provident odio, illum asperiores, temporibus a veniam. Est eveniet sint recusandae ducimus mollitia accusamus doloremque dignissimos, iusto enim commodi, illo, sequi odit! Saepe doloremque iam natus reprehenderit dolorum quam. Consectetur, laborum voluptatibus ullam libero voluptas perspiciatis maiores eligendi id dolorum suscipit perferendis blanditiis, dignissimos nemo consequuntur voluptate tempora velit numquam, eos maxime optio voluptatem odio. Sequi et tempore a quos praesentium.
+    </div>
+    <div id="aside" class="primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta expedita quis!
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam beatae laudantium nihil aliquam quisquam, suscipit, tempora maxime excepturi vitae animi voluptatem dignissimos cumque nobis obcaecati, eius temporibus voluptas? Numquam ullam atque cum minima quod deleniti quae qui! Possimus doloribus ea odio explicabo vel. Nemo saepe suscipit ipsa eum tenetur quidem laborum alias corrupti! Ad doloribus voluptas laudantium fugiat odit temporibus, minima in assumenda cupiditate nihil aliquid sit ullam porro esse tempore neque! Error et illo sit deleniti voluptates. Exercitationem fuga quos,  itaque neque necessitatibus quasi s non voluptas dolore quidem architecto impedit nostrum optio delectus expedita possimus hic, repudiandae iste ipsa eveniet tempore. Impedit, cupiditate.
+    </div>
+    <footer class="primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quo libero cumque.</footer>
+
+
+</body>
+
+</html>
